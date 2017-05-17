@@ -1,0 +1,23 @@
+{
+  "name": "gorod-obrazovaniya",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alexey Toklovich <alexey@toklovich.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "^7.0.0",
+    "flexboxgrid": "^6.3.2"
+  }
+}
