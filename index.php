@@ -10,6 +10,9 @@
 <body>
 <section class="landing-header">
     <div class="wrapper">
+        <div class="landing-header-goverment-icon">
+            <img src="images/logo-pravitelstvo-moskvy.png" alt="Правительство Москвы">
+        </div>
         <div class="landing-header-logo">
             <img class="landing-header-logo-img" src="images/logo.svg" alt="Город образования">
             <h1 class="landing-header-logo-title">
@@ -130,23 +133,23 @@
             <div class="col-xs-12 col-md-6">
                 <ul class="ul-rainbow-arrows">
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Конференция министров образования</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Конференция министров образования</span> <br>
                         «Системы образования как инструмент консолидации городского сообщества»;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Съезд учителей города Москвы</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Съезд учителей города Москвы</span> <br>
                         Пленарное заседание, мастер-классы лучших педагогов столицы;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Специальная программа EdCrunch в рамках Форума</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Специальная программа EdCrunch в рамках Форума</span> <br>
                         Новые образовательные технологии;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Международный Пушкинский конкурс</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Международный Пушкинский конкурс</span> <br>
                         Подведение итогов;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Робототехнический фестиваль</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Робототехнический фестиваль</span> <br>
                         Робокросс, робобаттл, робофутбол;
                     </li>
                 </ul>
@@ -154,21 +157,21 @@
             <div class="col-xs-12 col-md-6">
                 <ul class="ul-rainbow-arrows">
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Международная конференция с участием Федеральной службы по надзору в сфере образования и науки С.С. Кравцова</span>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Международная конференция с участием Федеральной службы по надзору в сфере образования и науки С.С. Кравцова</span>
                         <br>
                         «Системы образования с высокими возможностями для каждого: международный опыт, оценка, внедрение»;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Дискуссии о ключевых трендах развития образования</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Дискуссии о ключевых трендах развития образования</span> <br>
                         Выступления, круглые столы, воркшопы, дебаты;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">World Skills Show</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">World Skills Show</span> <br>
                         Состязания участников и мастер-классы
                         от победителей чемпионатов;
                     </li>
                     <li>
-                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px;">Шахматный турнир</span> <br>
+                        <span style="display: inline-block; font-size: 16px; margin-bottom: 4px; font-weight: 500;">Шахматный турнир</span> <br>
                         С участием международных гроссмейстеров;
                     </li>
                 </ul>
@@ -203,6 +206,17 @@
         </div>
     </div>
 </section>
+
+<div id="overlay" class="overlay">
+    <div id="submit-modal" class="submit-modal">
+        <a href="#" class="submit-modal-close js-modal-close"></a>
+        <div class="submit-modal-bell"></div>
+        <div class="submit-modal-title">Спасибо</div>
+        <p>
+            Мы напишем сразу как откроется регистрация.
+        </p>
+    </div>
+</div>
 
 <footer class="main-footer">
     <div class="wrapper">

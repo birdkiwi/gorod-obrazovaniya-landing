@@ -11,7 +11,7 @@ $(document).ready(function () {
                 data: data
             })
             .done(function() {
-                alert( "Спасибо! Мы напишем вам сразу как откроется регистрация." );
+                $('#overlay').addClass('active');
             })
             .fail(function() {
                 alert( "Возникла ошибка при отправке данных. Пожалуйста, проверьте интернет-соединение, либо попробуйте позднее." );
@@ -22,4 +22,9 @@ $(document).ready(function () {
 
         return false;
     });
+});
+
+$('.js-modal-close').click(function () {
+    $('#overlay').removeClass('active');
+    return false;
 });

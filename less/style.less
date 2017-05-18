@@ -8,15 +8,20 @@
 @import "layout/base";
 @import "layout/margins";
 @import "layout/footer";
+@import "layout/overlay";
 
 .landing-header {
   background: url("../images/bg-city.svg") bottom center no-repeat;
   padding-bottom: 150px;
 }
 
+.landing-header-goverment-icon {
+  margin-top: 30px;
+}
+
 .landing-header-logo {
   text-align: center;
-  margin-top: 50px;
+  margin-top: -10px;
   margin-bottom: 50px;
 }
 
@@ -25,13 +30,18 @@
 }
 
 .landing-header-logo-title {
-  font-weight: normal;
   text-transform: uppercase;
   font-size: 38px;
   letter-spacing: 1.38px;
   line-height: 68px;
+  font-weight: 900;
   margin: 0;
   color: #333333;
+
+  @media all and (max-width: 800px) {
+    font-size: 28px;
+    line-height: 46px;
+  }
 }
 
 .landing-header-logo-subtitle {
@@ -41,6 +51,11 @@
   letter-spacing: 0.2px;
   margin: 0;
   color: #454545;
+
+  @media all and (max-width: 800px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .content-section {
@@ -52,7 +67,7 @@
   line-height: 32px;
   margin-top: 0;
   margin-bottom: 15px;
-  font-weight: normal;
+  font-weight: bold;
 
   @media all and (max-width: 480px) {
     font-size: 18px;
@@ -72,6 +87,7 @@
   flex-basis: 50%;
   padding-left: 45px;
   font-size: 15px;
+  font-weight: 300;
   color: #666666;
 
   &::before {
@@ -110,6 +126,8 @@
 
 .landing-header-subscribe-title {
   font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 4px;
   color: #454545;
 }
 
@@ -252,6 +270,7 @@
   position: relative;
   background: url("../images/bg-pattern.png") repeat #F4F4F4;
   font-size: 28px;
+  font-weight: 300;
   line-height: 36px;
   color: #454545;
   padding: 35px;
@@ -318,4 +337,68 @@
   min-height: 400px;
   background-color: #cecece;
   box-shadow: inset 0 0 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+.contacts-map-balloon {
+  position: relative;
+  background: rgba(37, 56, 113, 0.76);
+  color: #fff;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -12px;
+    left: 30px;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 14px 0 0;
+    border-color: rgba(37, 56, 113, 0.76) transparent transparent transparent;
+  }
+}
+
+.submit-modal {
+  position: relative;
+  padding: 50px 40px 45px 40px;
+  max-width: 500px;
+  text-align: center;
+  font-size: 17px;
+  color: #454545;
+  background: #fff;
+  box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.35);
+
+  @media all and (max-width: 400px) {
+    padding: 25px 20px;
+  }
+}
+
+.submit-modal-close {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 10;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icons/icon-close.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.submit-modal-bell {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  background: url("../images/icons/icon-bell.svg") no-repeat center;
+}
+
+.submit-modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 15px;
 }
